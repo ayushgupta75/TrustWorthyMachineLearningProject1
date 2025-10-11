@@ -6,6 +6,17 @@ Fine-tuning Qwen2.5-3B-Instruct on AceReason-1.1-SFT using loss-based difficulty
 
 ---
 
+## 🔗 Links
+
+### Models 
+
+1. Randomly selected model: https://huggingface.co/aaryankamdar/TML_Trained_model_random_dataset 
+
+2. Data selection: https://huggingface.co/aaryankamdar/TML_PROJECT_MODELS 
+
+### DatasetsDataset Links: https://huggingface.co/datasets/aaryankamdar/TML_Project 
+
+
 ##  Results Summary
 
 | Benchmark | Baseline | Random | Advanced | Improvement |
@@ -19,17 +30,6 @@ Fine-tuning Qwen2.5-3B-Instruct on AceReason-1.1-SFT using loss-based difficulty
 **Key Achievement:** Loss-based data selection achieved **+34.2 percentage points** better performance than random selection on MATH-500, validating intelligent data curation for reasoning tasks.
 
 ---
-
-## 🔗 Links
-
-### Models 
-
-1. Randomly selected model: https://huggingface.co/aaryankamdar/TML_Trained_model_random_dataset 
-
-2. Data selection: https://huggingface.co/aaryankamdar/TML_PROJECT_MODELS 
-
-### DatasetsDataset Links: https://huggingface.co/datasets/aaryankamdar/TML_Project 
-
 ### Documentation
 - **Full Technical Report:** [REPORT.md](REPORT.md)
 
