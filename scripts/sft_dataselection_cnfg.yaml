@@ -1,0 +1,36 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_offload_config.json
+flash_attn: fa2
+
+### dataset
+dataset: best15k  # Edit if needed
+cutoff_len: 16384
+overwrite_cache: true
+preprocessing_num_workers: 16
+template: qwen
+
+### output
+output_dir: saves/qwen25_3b_instruct/lraaryanp12hrskamdar  # Edit accordingly
+logging_steps: 1
+# save_strategy: epoch
+save_steps: 400
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 2      # Edit if needed (Tweak as needed)
+gradient_accumulation_steps: 8      # Edit if needed (Tweak as needed)
+learning_rate: 1.0e-5               # Edit if needed (Tweak as needed)
+num_train_epochs: 3                 # Edit if needed (Tweak as needed)
+lr_scheduler_type: cosine
+warmup_ratio: 0.1                   # Edit if needed (Tweak as needed)
+bf16: true
+ddp_timeout: 180000000
+
+report_to: wandb

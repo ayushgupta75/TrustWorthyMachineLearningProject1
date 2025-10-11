@@ -1,0 +1,8 @@
+tag,task,metric,value,stderr,model_name,ended_at
+NavyaBaseline,lighteval|aime25|0,pass@k_with_k&n,0.0,0.0,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301
+NavyaBaseline,lighteval|gpqa:diamond|0,gpqa_pass@k_with_k,0.29292929292929293,0.032424979581788166,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301
+NavyaBaseline,lighteval|aime24|0,pass@k_with_k,0.03333333333333333,0.033333333333333326,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301
+NavyaBaseline,lighteval|math_500|0,pass@k_with_k&n,0.634,0.021564276850201618,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301
+NavyaBaseline,all,pass@k_with_k&n,0.317,0.010782138425100809,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301
+NavyaBaseline,all,gpqa_pass@k_with_k,0.29292929292929293,0.032424979581788166,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301
+NavyaBaseline,all,pass@k_with_k,0.03333333333333333,0.033333333333333326,/home/narulanavya3/hf_models/Qwen2.5-3B-Instruct,1298758.199441301

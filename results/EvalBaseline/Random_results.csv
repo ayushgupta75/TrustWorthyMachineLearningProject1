@@ -1,0 +1,6 @@
+dataset,accuracy,model
+AIME 2024,0.0,/home/narulanavya3/checkpoints/Navya_lora-Qwen2.5-3B-merged_20251010_1640
+AIME 2025,0.0,/home/narulanavya3/checkpoints/Navya_lora-Qwen2.5-3B-merged_20251010_1640
+MATH-500,0.3,/home/narulanavya3/checkpoints/Navya_lora-Qwen2.5-3B-merged_20251010_1640
+GPQA-Diamond,0.2727,/home/narulanavya3/checkpoints/Navya_lora-Qwen2.5-3B-merged_20251010_1640
+ALL (aggregated),0.15,/home/narulanavya3/checkpoints/Navya_lora-Qwen2.5-3B-merged_20251010_1640

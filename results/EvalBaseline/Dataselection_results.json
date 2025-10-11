@@ -1,0 +1,301 @@
+{
+  "config_general": {
+    "lighteval_sha": "?",
+    "num_fewshot_seeds": 1,
+    "max_samples": null,
+    "job_id": "0",
+    "start_time": 4572889.587244944,
+    "end_time": 4574881.972701848,
+    "total_evaluation_time_secondes": "1992.3854569038376",
+    "model_config": {
+      "model_name": "/home/aaryankamdar/LLaMA-Factory/saves/qwen25_3b_instruct/lraaryanp12hrskamdar",
+      "generation_parameters": {
+        "num_blocks": null,
+        "block_size": null,
+        "early_stopping": null,
+        "repetition_penalty": null,
+        "frequency_penalty": null,
+        "length_penalty": null,
+        "presence_penalty": null,
+        "max_new_tokens": 32768,
+        "min_new_tokens": null,
+        "seed": null,
+        "stop_tokens": null,
+        "temperature": 0.6,
+        "top_k": null,
+        "min_p": null,
+        "top_p": 0.95,
+        "truncate_prompt": null,
+        "cache_implementation": null,
+        "response_format": null
+      },
+      "system_prompt": null,
+      "cache_dir": "~/.cache/huggingface/lighteval",
+      "tokenizer": null,
+      "revision": "main",
+      "dtype": "bfloat16",
+      "tensor_parallel_size": 1,
+      "data_parallel_size": 1,
+      "pipeline_parallel_size": 1,
+      "gpu_memory_utilization": 0.95,
+      "max_model_length": 32768,
+      "quantization": null,
+      "load_format": null,
+      "swap_space": 4,
+      "seed": 1234,
+      "trust_remote_code": false,
+      "add_special_tokens": true,
+      "multichoice_continuations_start_space": true,
+      "pairwise_tokenization": false,
+      "max_num_seqs": 128,
+      "max_num_batched_tokens": 2048,
+      "subfolder": null,
+      "is_async": false,
+      "override_chat_template": null
+    },
+    "model_name": "/home/aaryankamdar/LLaMA-Factory/saves/qwen25_3b_instruct/lraaryanp12hrskamdar"
+  },
+  "results": {
+    "lighteval|aime25|0": {
+      "pass@k_with_k&n": 0.03333333333333333,
+      "pass@k_with_k&n_stderr": 0.03333333333333333
+    },
+    "lighteval|aime24|0": {
+      "pass@k_with_k": 0.03333333333333333,
+      "pass@k_with_k_stderr": 0.033333333333333326
+    },
+    "lighteval|math_500|0": {
+      "pass@k_with_k&n": 0.642,
+      "pass@k_with_k&n_stderr": 0.021461434862859126
+    },
+    "lighteval|gpqa:diamond|0": {
+      "gpqa_pass@k_with_k": 0.1919191919191919,
+      "gpqa_pass@k_with_k_stderr": 0.02805779167298901
+    },
+    "all": {
+      "pass@k_with_k&n": 0.33766666666666667,
+      "pass@k_with_k&n_stderr": 0.02739738409809623,
+      "pass@k_with_k": 0.03333333333333333,
+      "pass@k_with_k_stderr": 0.033333333333333326,
+      "gpqa_pass@k_with_k": 0.1919191919191919,
+      "gpqa_pass@k_with_k_stderr": 0.02805779167298901
+    }
+  },
+  "versions": {},
+  "config_tasks": {
+    "lighteval|aime25|0": {
+      "name": "aime25",
+      "prompt_function": "aime_prompt_fn",
+      "hf_repo": "yentinglin/aime_2025",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "pass@k_with_k&n",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "PassAtK(normalize=None, strip_strings=True, score_sample=compute, type_exact_match=None, k=1, n=1, attribute_must_be_set=['k'])",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 10000,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "lighteval"
+      ],
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "lighteval|aime24|0": {
+      "name": "aime24",
+      "prompt_function": "aime_prompt_fn",
+      "hf_repo": "HuggingFaceH4/aime_2024",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "pass@k_with_k",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "PassAtK(normalize=None, strip_strings=True, score_sample=compute, type_exact_match=None, k=1, n=1, attribute_must_be_set=['k'])",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": null,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "lighteval"
+      ],
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "lighteval|math_500|0": {
+      "name": "math_500",
+      "prompt_function": "math_500",
+      "hf_repo": "HuggingFaceH4/MATH-500",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "pass@k_with_k&n",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "PassAtK(normalize=None, strip_strings=True, score_sample=compute, type_exact_match=None, k=1, n=1, attribute_must_be_set=['k'])",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "lighteval"
+      ],
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "lighteval|gpqa:diamond|0": {
+      "name": "gpqa:diamond",
+      "prompt_function": "gpqa_instruct",
+      "hf_repo": "Idavidrein/gpqa",
+      "hf_subset": "gpqa_diamond",
+      "metrics": [
+        {
+          "metric_name": "gpqa_pass@k_with_k",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "PassAtK(normalize=None, strip_strings=False, score_sample=compute, type_exact_match=None, k=1, n=1, attribute_must_be_set=['k'])",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "lighteval"
+      ],
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 1
+    }
+  },
+  "summary_tasks": {
+    "lighteval|aime25|0": {
+      "hashes": {
+        "hash_examples": "76561f892edc3343",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "7c8e99b6ae43c3c8",
+        "hash_cont_tokens": "2dccf31308df9f67"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "lighteval|aime24|0": {
+      "hashes": {
+        "hash_examples": "ddec8fc79d0a014b",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "753d64f6b0a80150",
+        "hash_cont_tokens": "445970a82e0784fb"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "lighteval|math_500|0": {
+      "hashes": {
+        "hash_examples": "adf0cc8311011db2",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "5cef5f6b31af0d6e",
+        "hash_cont_tokens": "f421e58bd4f7db23"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "lighteval|gpqa:diamond|0": {
+      "hashes": {
+        "hash_examples": "7e6ab78504360639",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "bfac9b2ec81f8517",
+        "hash_cont_tokens": "f4c4084599399668"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "94136960c33fdba5",
+      "hash_full_prompts": "4d0d801ad5785eab",
+      "hash_input_tokens": "ddc61b54c52d34db",
+      "hash_cont_tokens": "9e913f067280b888"
+    },
+    "truncated": 0,
+    "non_truncated": 0,
+    "padded": 0,
+    "non_padded": 0
+  }
+}
