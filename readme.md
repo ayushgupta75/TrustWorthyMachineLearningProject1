@@ -31,5 +31,5 @@ Fine-tuning Qwen2.5-3B-Instruct on AceReason-1.1-SFT using loss-based difficulty
 
 ---
 ### Documentation
-- **Full Technical Report:** [REPORT.md](REPORT.md)
+- **Full Technical Report:** TML_PROJECT.pdf
 
